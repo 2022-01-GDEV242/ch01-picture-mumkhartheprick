@@ -42,43 +42,43 @@ public class Picture
     {
         if(!drawn) {
             skin.changeColor("blue");
-            skin.moveHorizontal(60);
-            skin.moveVertical(40);
+            skin.moveHorizontal(-170);
+            skin.moveVertical(-50);
             skin.changeSize(250);
             skin.makeVisible();
             
             nose.changeColor("green");
-            nose.moveHorizontal(190);
-            nose.moveVertical(165);
+            nose.moveHorizontal(-20);
+            nose.moveVertical(25);
             nose.changeSize(60,70);
             nose.makeVisible();
     
             eye1.changeColor("black");
             eye1.changeSize(50);
-            eye1.moveHorizontal(115);
-            eye1.moveVertical(100);
+            eye1.moveHorizontal(-115);
+            eye1.moveVertical(10);
             eye1.makeVisible();
     
             eye2.changeColor("black");
-            eye2.moveHorizontal(230);
-            eye2.moveVertical(100);
+            eye2.moveVertical(10);
             eye2.changeSize(50);
             eye2.makeVisible();
             
             mohawk.changeColor("red");
-            mohawk.moveHorizontal(160);
+            mohawk.moveHorizontal(-150);
+            mohawk.moveVertical(-120);
             mohawk.changeSize(60);
             mohawk.makeVisible();
             
             eyebrows.changeColor("black");
-            eyebrows.moveHorizontal(195);
-            eyebrows.moveVertical(85);
+            eyebrows.moveHorizontal(-85);
+            eyebrows.moveVertical(-95);
             eyebrows.changeSize(2, 200);
             eyebrows.makeVisible();
             
             head_hider.changeColor("blue");
-            head_hider.moveHorizontal(190);
-            head_hider.moveVertical(80);
+            head_hider.moveHorizontal(-120);
+            head_hider.moveVertical(-40);
             head_hider.changeSize(10);
             head_hider.makeVisible();
             drawn = true;
