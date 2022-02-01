@@ -104,9 +104,12 @@ public class Picture
      */
     public void setColor()
     {
-        wall.changeColor("red");
-        window.changeColor("black");
-        roof.changeColor("green");
-        sun.changeColor("yellow");
+        skin.changeColor("blue");
+        nose.changeColor("green");
+        eye1.changeColor("black");
+        eye2.changeColor("black");
+        mohawk.changeColor("red");
+        eyebrows.changeColor("black");
+        head_hider.changeColor("blue");
     }
 }
