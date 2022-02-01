@@ -90,10 +90,13 @@ public class Picture
      */
     public void setBlackAndWhite()
     {
-        wall.changeColor("black");
-        window.changeColor("white");
-        roof.changeColor("black");
-        sun.changeColor("black");
+        skin.changeColor("black");
+        nose.changeColor("white");
+        eye1.changeColor("white");
+        eye2.changeColor("white");
+        mohawk.changeColor("white");
+        eyebrows.changeColor("white");
+        head_hider.changeColor("black");
     }
 
     /**
