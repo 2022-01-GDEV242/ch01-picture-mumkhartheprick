@@ -11,10 +11,13 @@
  */
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
+    private Circle skin;
+    private Triangle nose;
+    private Circle eye1;
+    private Circle eye2;
+    private Square mohawk;
+    private Person eyebrows;
+    private Square head_hider;
     private boolean drawn;
 
     /**
@@ -22,10 +25,13 @@ public class Picture
      */
     public Picture()
     {
-        wall = new Square();
-        window = new Square();
-        roof = new Triangle();  
-        sun = new Circle();
+        skin = new Circle();
+        nose = new Triangle();
+        eye1 = new Circle();
+        eye2 = new Circle();
+        mohawk = new Square();
+        eyebrows = new Person();
+        head_hider = new Square();
         drawn = false;
     }
 
@@ -35,27 +41,46 @@ public class Picture
     public void draw()
     {
         if(!drawn) {
-            wall.moveHorizontal(-140);
-            wall.moveVertical(20);
-            wall.changeSize(120);
-            wall.makeVisible();
+            skin.changeColor("blue");
+            skin.moveHorizontal(60);
+            skin.moveVertical(40);
+            skin.changeSize(250);
+            skin.makeVisible();
             
-            window.changeColor("black");
-            window.moveHorizontal(-120);
-            window.moveVertical(40);
-            window.changeSize(40);
-            window.makeVisible();
+            nose.changeColor("green");
+            nose.moveHorizontal(190);
+            nose.moveVertical(165);
+            nose.changeSize(70);
+            nose.makeVisible();
     
-            roof.changeSize(60, 180);
-            roof.moveHorizontal(20);
-            roof.moveVertical(-60);
-            roof.makeVisible();
+            eye1.changeColor("black");
+            eye1.changeSize(50);
+            eye1.moveHorizontal(115);
+            eye1.moveVertical(100);
+            eye1.makeVisible();
     
-            sun.changeColor("yellow");
-            sun.moveHorizontal(100);
-            sun.moveVertical(-40);
-            sun.changeSize(80);
-            sun.makeVisible();
+            eye2.changeColor("black");
+            eye2.moveHorizontal(230);
+            eye2.moveVertical(100);
+            eye2.changeSize(50);
+            eye2.makeVisible();
+            
+            mohawk.changeColor("red");
+            mohawk.moveHorizontal(160);
+            mohawk.changeSize(60);
+            mohawk.makeVisible();
+            
+            eyebrows.changeColor("black");
+            eyebrows.moveHorizontal(195);
+            eyebrows.moveVertical(85);
+            eyebrows.changeSize(2);
+            eyebrows.makeVisible();
+            
+            head_hider.changeColor("blue");
+            head_hider.moveHorizontal(190);
+            head_hider.moveVertical(80);
+            head_hider.changeSize(10);
+            head_hider.makeVisible();
             drawn = true;
         }
     }
