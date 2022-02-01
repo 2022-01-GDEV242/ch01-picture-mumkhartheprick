@@ -50,7 +50,7 @@ public class Picture
             nose.changeColor("green");
             nose.moveHorizontal(190);
             nose.moveVertical(165);
-            nose.changeSize(70);
+            nose.changeSize(60,70);
             nose.makeVisible();
     
             eye1.changeColor("black");
@@ -73,7 +73,7 @@ public class Picture
             eyebrows.changeColor("black");
             eyebrows.moveHorizontal(195);
             eyebrows.moveVertical(85);
-            eyebrows.changeSize(2);
+            eyebrows.changeSize(2, 200);
             eyebrows.makeVisible();
             
             head_hider.changeColor("blue");
